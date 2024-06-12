@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Binding of Isaac</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/js.js"></script>
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/bxslider.min.js"></script>
+    <link rel="stylesheet" href="../plugins/bxslider.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <link rel="icon" href="../imagens/forg.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagens/forg.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <article>
+
+        <button class="scrollTop" onclick="backTop();">
+            <img src="../imagens/R_KEY.png" alt="R_KEY">
+        </button>
+
+        <header id="cabecalho">
+            <div class="container">
+                <a href="../index.html">
+                    <img src="../gifs/logoGIF.gif" alt="IsaacIcon" id="logo">
+                </a>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="criadores.html">Criadores</a></li>
+                        <li><a href="historia.html">História</a></li>
+                        <li><a href="#">Personagens</a>
+                            <ul class="submenu">
+                                <li class="sub"><a href="characters.html">Principais</a></li>
+                                <li class="sub"><a href="familiar.html">Familiar</a></li>
+                                <li class="sub"><a href="coopbaby.html">Co-op Baby</a></li>
+                            </ul>
+                        <li><a href="#">SoundTracks</a>
+                            <ul class="submenu">
+                                <li class="sub"><a href="original.html">Original</a></li>
+                                <li class="sub"><a href="remake.html">Remake</a></li>
+                            </ul>
+                        <li><a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/"
+                                target="_blank">Steam</a></li>
+                    </ul>
+                </nav>
+
+                <div class="image-container">
+
+                    <div class="overlay3">
+                        <h1 class="game">F a m i l i a r</h2>
+                    </div>
+
+                    <h2>Familiares são pequenos companheiros, geralmente gerados por itens passivos, que seguem e
+                        auxiliam Isaac.<br> Os efeitos dos familiares incluem (mas não estão limitados a) geração de
+                        pickup,<br> disparo de familiares que disparam suas próprias lágrimas contra os inimigos e
+                        orbitais<br> que atuam como escudos de projéteis e/ou causam dano de contato.
+                        Muitos desses familiares <br>(especialmente familiares de geração de pickup e de tiro) seguem
+                        atrás de Isaac. Quando Isaac pega vários desses familiares a seguir, <br>eles formam uma linha
+                        atrás dele, do mais antigo para o mais novo (sendo o familiar mais próximo atrás de Isaac o mais
+                        antigo coletado)<br> em vez de se sobreporem constantemente no mesmo lugar atrás de Isaac.<br>
+                        Isaac não pode ter mais de 64 familiares ao mesmo tempo. Isso inclui aranhas azuis e moscas,
+                        itens familiares como Dry Baby, <br>(em Repentance) coágulos de sangue de Tainted Eve, etc.<br>
+                        Ganhar mais do que isso resultará na destruição de familiares, com aranhas azuis e moscas sendo
+                        destruídas primeiro. <img class="isaacangel"
+                            src="../gifs/tumblr_e9ee35cc810b2b97812b5d41b90bae5e_ee468a38_250.gif"></h2>
+
+                </div>
+
+                <div class="image-container">
+
+                    <table>
+                        <tr>
+                            <th>Nomes</th>
+                            <th>Icon</th>
+                            <th>Sobre</th>
+                        </tr>
+
+                        <tr>
+                            <td>Guppy's Head</td>
+                            <td><img id="familiar" src="../imagens/Guppy's Head.png" alt="Guppy's_Head"></td>
+                            <td>Gera de 2 a 4 Moscas Azuis aliadas que causam dano aos inimigos.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Jar of Flies</td>
+                            <td><img src="../imagens/Collectible_Jar_of_Flies_icon.png" alt="Jar_Of_Flies"></td>
+                            <td>Matar um inimigo adiciona uma mosca ao pote, até um máximo de 20. Ao usar, libera Moscas
+                                Azuis igual ao número de moscas no pote.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Compost</td>
+                            <td><img src="../imagens/Collectible_Compost_icon.png" alt="Compost"></td>
+                            <td>Dobra as Moscas Azuis e as Aranhas Azuis de Isaac, ou gera uma se Isaac não tiver
+                                nenhuma. Converte os captadores da sala atual em Blue Flies ou Blue Spiders.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Everything Jar</td>
+                            <td><img src="../imagens/Collectible_Everything_Jar_icon.png" alt=""></td>
+                            <td>
+                                Gera certos itens com base em quantas cargas ele possui. Se estiver totalmente
+                                carregado, terá um dos muitos efeitos exclusivos.</td>
+                        </tr>
+                    </table>
+
+                    <div class="overlay2">
+                        <h1>Blue Flies</h1>
+                        <img id="blue" src="../imagens/Blue_Fly.png" alt="" width="30px">
+                    </div>
+                </div>
+
+                <div class="image-container-2">
+                    <table>
+                        <tr>
+                            <th>Nomes</th>
+                            <th>Icon</th>
+                            <th>Sobre</th>
+                        </tr>
+
+                        <tr>
+                            <td>Box of Spiders</td>
+                            <td><img id="familiar" src="../imagens/Collectible_Box_of_Spiders_icon.png"
+                                    alt="Box_of_Spiders"></td>
+                            <td>Gera de 4 a 8 Aranhas Azuis que causam 2x o dano de Isaac aos inimigos.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Compost</td>
+                            <td><img src="../imagens/Collectible_Compost_icon.png" alt="Compost"></td>
+                            <td>Dobra as Moscas Azuis e as Aranhas Azuis de Isaac, ou gera uma se Isaac não tiver
+                                nenhuma. Converte os captadores da sala atual em Blue Flies ou Blue Spiders.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Infestation 2</td>
+                            <td><img src="../imagens/Collectible_Infestation_2_icon.png" alt="Infestation_2"></td>
+                            <td>Gera Aranhas Azuis aliadas de inimigos mortos.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sissy Longlegs </td>
+                            <td><img src="../imagens/Collectible_Sissy_Longlegs_icon.png" alt="Sissy_Longlegs"></td>
+                            <td>
+                                Gera um familiar que vagueia aleatoriamente, ocasionalmente gerando Aranhas
+                                Azuis.<br>(em Repentance) Encanta brevemente os inimigos ao entrar em contato.</td>
+                        </tr>
+                    </table>
+
+                    <div class="overlay2">
+                        <h1>Blue Spiders</h1>
+                        <img id="blue" src="../imagens/Blue_Spider.webp" alt="Blue_Spider">
+
+                    </div>
+
+                </div>
+                <div class="image-container-2">
+                    <div class="overlay-text-2">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/A3J4hhahYos?si=r4o_TtRHuVOoSYvQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h1 id="WIKI"><a href="https://bindingofisaacrebirth.fandom.com/wiki/Familiar"
+                                target="_blank">WIKI</a></li>
+                        </h1>
+
+                    </div>
+                </div>
+
+                <footer id="rodape">
+                    <span>
+                        Site desenvolvido na disciplina de Introdução à Tecnologia Web
+                        do Curso de Sistemas de Informação<br>
+                        Centro Universitário do Rio São Francisco - UniRios<br>
+                        Autor: João Anderson da Cruz - <a href="https://www.instagram.com/oestranguladordobalneario/"
+                            target="_blank">REDE SOCIAL</a>
+                        <img id="gifrodape" src="../gifs/rodapegifisaac.gif">
+                    </span>
+                </footer>
+    </article>
+
+</body>
+
+</html>

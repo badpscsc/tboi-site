@@ -1,0 +1,654 @@
+* {
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+
+h1 {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid #301800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 90%;
+    margin-top: 150px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+
+}
+
+th {
+    font-weight: bold;
+    font-family: 'upheadvt';
+    color: #AD8B5A;
+    text-shadow: 0px 2px 2px #301800;
+
+}
+
+tr:hover:nth-child(1n + 2) {
+    background-color: #AD8B5A;
+    color: #fff;
+}
+
+.floating-box {
+    width: 35%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-image: url(../imagens/background.jfif);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 600px;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 1px 3px 4px #000;
+
+}
+
+@media (max-width: 768px) {
+
+    .text-content,
+    .floating-box {
+        width: 100%;
+        float: none;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@font-face {
+    font-family: 'upheadvt';
+    src: url(../fontes/upheavtt.ttf);
+}
+
+body {
+    background-image: url(../imagens/backgroundgray.jfif);
+    background-size: 100%;
+    cursor: url('../imagens/background.jfif'), auto;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #AD8B5A;
+    text-align: center;
+    text-shadow: 0px 2px 2px #301800;
+    cursor: default;
+    font-family: 'upheadvt';
+    margin-bottom: 10px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+h1:hover {
+    transform: scale(0.9);
+}
+
+h2 {
+    font-family: sans-serif;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: small;
+    text-shadow: 0px 2px 2px #000000;
+    margin-top: 5px;
+}
+
+
+.teoria {
+    border-radius: 50px 50px 50px 50px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 1px 3px 4px #000;
+}
+
+.isaacangel {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.isaacangel:hover {
+    transform: scale(1.10, 1.10);
+}
+
+.teoria:hover {
+    transform: scale(1.15, 1.15);
+}
+
+.image-container {
+    background: url("../imagens/FloorTemplate.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 550px;
+    margin-top: 15px;
+    box-shadow: 1px 3px 4px #000;
+}
+
+.blight {
+    margin-right: 50px;
+    margin-bottom: 60px;
+}
+
+.image-container .cz1 {
+    width: 50px;
+    margin: auto;
+    margin-bottom: 0;
+    height: 50px;
+    border-radius: 5px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: none;
+    margin-top: 20px;
+}
+
+.image-container .cz2 {
+    width: 50px;
+    margin: auto;
+    margin-bottom: 0;
+    height: 50px;
+    border-radius: 5px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: none;
+    margin-top: 20px;
+}
+
+.cz2:hover {
+    transform: scale(1.15, 1.15);
+}
+
+.cz1:hover {
+    transform: scale(1.15, 1.15);
+}
+
+.overlay-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.overlay-me {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+.image-container-2 {
+    background: url("../imagens/FloorTemplate.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    height: 560px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 1px 3px 4px #000;
+}
+
+.musicaremake {
+    background: url("../imagens/FloorTemplate.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    max-width: 1100px;
+    height: 560px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 1px 3px 4px #000;
+    display: flex;
+}
+
+.Forg {
+    width: 100px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1em;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding-bottom: 75%;
+
+}
+
+.wrapper2 {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1em;
+    margin-left: 10px;
+    margin-top: 50px;
+    padding-bottom: 75%;
+
+}
+
+.wrapper3 {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1em;
+    margin-left: 10px;
+    margin-top: 50px;
+    padding-bottom: 75%;
+
+}
+
+.overlay-text-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.overlay2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 300px;
+}
+
+.overlay3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 350px;
+}
+
+.overlay-text-3 {
+    color: #AD8B5A;
+    font-size: larger;
+    text-shadow: 0px 2px 2px #301800;
+    cursor: default;
+    margin-bottom: 10px;
+    font-family: 'upheadvt';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.Eu {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 50px 50px 50px 50px;
+    width: 280px;
+}
+
+.Eu:hover {
+    transform: scale(0.9);
+}
+
+.erro {
+    width: 140px;
+    margin-right: 800px;
+    margin-top: 375px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+
+
+.game {
+    color: #AD8B5A;
+    font-size: larger;
+    text-shadow: 0px 2px 2px #301800;
+    cursor: default;
+    margin-bottom: 10px;
+    font-family: 'upheadvt';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.trailer {
+    color: #AD8B5A;
+    font-size: large;
+    text-shadow: 0px 2px 2px #301800;
+    cursor: default;
+    margin-bottom: 10px;
+    font-family: 'upheadvt';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.container title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.sobremim {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    z-index: 999;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: default;
+}
+
+
+.sobremim:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.scrollTop {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+}
+
+.scrollTop:hover {
+    transform: scale(0.9);
+}
+
+.scrollTop.active {
+    opacity: 1;
+    visibility: visible;
+    cursor: default;
+}
+
+.scrollTop img {
+    width: 100%;
+}
+
+/*CARROSSEL DE PERSONAGENS PRINCIPAIS*/
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    max-height: 300px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.carousel img:hover {
+    transform: scale(0.9);
+}
+
+
+.carousel-info {
+    text-align: center;
+}
+
+/*CARROSSEL DE COOP BABY*/
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel2 img {
+    width: 100px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.carousel2 img:hover {
+    transform: scale(0.9);
+}
+
+
+.carousel-info {
+    text-align: center;
+}
+
+
+#cabecalho {
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#cabecalho #logo {
+    width: 350px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+#cabecalho #logo:hover {
+    transform: scale(1.15, 1.15);
+
+}
+
+
+#cabecalho #menu ul {
+    display: flex;
+    justify-content: center;
+    font-family: 'upheadvt';
+}
+
+
+/* "block" serve para transformar o display em um bloco, assim possibilitando o "padding" agir na parte de cima! */
+#cabecalho #menu a {
+    color: #AD8B5A;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #000000;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#WIKI a {
+    color: #AD8B5A;
+    font-size: larger;
+    text-shadow: 0px 2px 2px #301800;
+    cursor: default;
+    margin-bottom: 10px;
+    font-family: 'upheadvt';
+    font-weight: bold;
+    font-style: normal;
+}
+
+#isaque {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 50px 50px 50px 50px;
+    width: 200px;
+    margin-top: 20px;
+
+}
+
+#isaque:hover {
+    transform: scale(1.15, 1.15);
+}
+
+#edmund {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 50px 50px 50px 50px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+#edmund:hover {
+    transform: scale(1.15, 1.15);
+}
+
+#florian {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 50px 50px 50px 50px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+#florian:hover {
+    transform: scale(1.15, 1.15);
+}
+
+#WIKI a {
+
+    cursor: help;
+
+}
+
+#cabecalho #menu a:hover {
+    transform: scale(1.25, 1.25);
+}
+
+#cabecalho #menu a:hover {
+    color: #FFF;
+    transition: all 0.2s linear;
+}
+
+#cabecalho #menu li {
+    list-style: none;
+    background-image: url(../imagens/pedracabecalhoo.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#cabecalho #menu li .submenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+}
+
+#cabecalho #menu li:hover .submenu {
+    display: block;
+}
+
+#trailer1 {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 0px 5px #000;
+}
+
+#Hotline {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 0px 5px #000;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#Hotline3 {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 0px 5px #000;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#rodape {
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    border-radius: 5px 5px 5px 5px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin-right: 100px;
+    margin-left: 100px;
+
+}
+
+#rodape a {
+    color: #AD8B5A;
+    text-shadow: 2px 2px 5px #000;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+}
+
+#gifrodape {
+    width: 150px;
+}
