@@ -1,1 +1,1 @@
-# [site-TBOI](https://badpscsc.github.io/site-tboi/)
+# [site-TBOI](https://github.com/badpscsc/tboi-site.git)
